@@ -1,6 +1,6 @@
 export interface ICharacters {
     info: IMetaInfo;
-    result: Array<ICharacter>;
+    results: Array<ICharacter>;
 }
 
 export interface IMetaInfo {
@@ -10,7 +10,7 @@ export interface IMetaInfo {
     prev: string;
 }
 
-interface ICharacter {
+export interface ICharacter {
     id: number;
     name: string;
     status: string;

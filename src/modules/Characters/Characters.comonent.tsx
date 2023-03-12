@@ -1,24 +1,15 @@
-import { useEffect } from 'react';
-import { useDispatch } from 'react-redux';
-
 import { ContentWrapper } from 'components/ContentWrapper/ContentWrapper.component';
-
-import { useGetCharactersByPageQuery } from 'services/characters.service';
-import { initPagination } from '../../redux/slices/characters.slice';
+import { useCharacterData } from './hooks/useCharacterData.hook';
+import { SkeletonLoader } from './components/SkeletonLoader.component';
 
 export const Characters = () => {
-    const { data, isLoading } = useGetCharactersByPageQuery('1');
-    const dispatch = useDispatch();
+    const { characters, isLoading } = useCharacterData('1');
 
-    useEffect(() => {
-        if (data) {
-            dispatch(initPagination({ ...data.info, currentPage: '1' }));
-        }
-    }, [data]);
+    console.log(characters);
 
     return (
         <ContentWrapper>
-            {isLoading ? <span>Loading...</span> : <div>Characters</div>}
+            {isLoading ? <SkeletonLoader /> : <div>Characters</div>}
         </ContentWrapper>
     );
 };
