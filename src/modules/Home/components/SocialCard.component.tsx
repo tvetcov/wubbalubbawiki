@@ -1,3 +1,5 @@
+import { memo } from 'react';
+
 import {
     Button,
     Card,
@@ -33,4 +35,4 @@ const SocialCard = ({ link, label, description }: ISocialLink) => {
     );
 };
 
-export default SocialCard;
+export default memo(SocialCard);
