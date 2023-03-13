@@ -36,7 +36,7 @@ export const Home = () => {
                         characters.
                     </Typography>
                     <Grid item>
-                        <img src={gif} alt="R&M" />
+                        <img src={gif} alt="catchGif" />
                     </Grid>
                 </Grid>
                 <Grid container spacing={3} item>

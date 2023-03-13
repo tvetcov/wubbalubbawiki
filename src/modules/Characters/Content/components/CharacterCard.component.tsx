@@ -20,6 +20,7 @@ const CharacterCard = ({ character }: { character: ICharacter }) => {
             md={3}
             sx={characterCardStyles.root}
             onClick={handleCharacterClick}
+            role="character-card"
         >
             <Box>
                 <Img src={image} />
