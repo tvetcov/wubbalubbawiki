@@ -7,7 +7,9 @@
         "build": "react-scripts build",
         "test": "react-scripts test",
         "ejet": "react-scripts eject",
-        "prepare": "husky install"
+        "prepare": "husky install",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build"
     },
     "eslintConfig": {
         "extends": [
@@ -52,6 +54,7 @@
         "@typescript-eslint/parser": "^5.54.1",
         "eslint": "^8.36.0",
         "eslint-config-prettier": "^8.7.0",
+        "gh-pages": "^5.0.0",
         "husky": "^8.0.3",
         "lint-staged": "^13.2.0",
         "msw": "^1.1.0",
