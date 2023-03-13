@@ -1,3 +1,13 @@
-# Wubba Lubba Wiki
+# Wubba Lubba Wiki 👴👦
 
-Rick and Morty character wiki built with ReactJS
+Welcome to the Rick and Morty Character Wiki Project! This project aims to provide a comprehensive and reliable source of information about the popular animated TV series' characters.
+
+### Tech Stack Used 👨‍💻
+
+-   [ReactJs](https://reactjs.org/)
+-   [TypeScript](https://www.typescriptlang.org/)
+-   [Redux](https://redux.js.org/)
+-   [RTK Query](https://redux-toolkit.js.org/rtk-query/overview)
+-   [Material UI](https://mui.com/)
+-   [React Router](https://reactrouter.com/en/main)
+-   Check package.json to see more :)
