@@ -5,7 +5,7 @@
     "homepage": "https://tvetcov.github.io/wubbalubbawiki/",
     "scripts": {
         "start": "react-scripts start",
-        "build": "BUILD_PATH='./docs'  react-scripts build",
+        "build": "react-scripts build",
         "test": "react-scripts test",
         "ejet": "react-scripts eject",
         "prepare": "husky install",
