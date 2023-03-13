@@ -6,6 +6,7 @@ export const homePageStyles: Record<string, SxProps> = {
         justifyContent: 'space-between',
     },
     socialLinks: {
-        marginBottom: 3,
+        paddingBottom: 3,
+        alignItems: 'flex-end',
     },
 };
