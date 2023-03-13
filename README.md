@@ -1,4 +1,4 @@
-# Wubba Lubba Wiki 👴👦
+# [Wubba Lubba Wiki 👴👦 (hosted on GitHub pages)](https://tvetcov.github.io/wubbalubbawiki/)
 
 Welcome to the Rick and Morty Character Wiki Project! This project aims to provide a comprehensive and reliable source of information about the popular animated TV series' characters.
 
