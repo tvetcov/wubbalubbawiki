@@ -2,6 +2,8 @@
 
 Welcome to the Rick and Morty Character Wiki Project! This project aims to provide a comprehensive and reliable source of information about the popular animated TV series' characters.
 
+![Rick and Morty](https://media.tenor.com/oC_e7R9GvZ8AAAAC/rick-and-morty-rtj.gif)
+
 ### Tech Stack Used 👨‍💻
 
 -   [ReactJs](https://reactjs.org/)
