@@ -5,7 +5,7 @@ import { SkeletonLoader } from './components/SkeletonLoader.component';
 import Content from './Content';
 
 import { useCharacterData } from './hooks/useCharacterData.hook';
-import ErrorPage from '../../router/SystemPages/ErrorPage';
+import ErrorPage from 'router/SystemPages/ErrorPage';
 
 export const Characters = () => {
     const location = useLocation();

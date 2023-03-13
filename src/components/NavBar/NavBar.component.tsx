@@ -4,6 +4,12 @@ import { navBarStyles } from './NavBar.styles';
 import { a11yProps } from './navBar.utils';
 import { useNavBar } from './useNavBar.hook';
 
+/**
+ * Application navigation bar.
+ * Static navigation for the app.
+ *
+ * @component
+ */
 export const NavBar = () => {
     const { selectedTab, handleChange } = useNavBar();
 

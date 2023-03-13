@@ -1,7 +1,12 @@
-import { Grid } from '@mui/material';
-
+import Grid from '@mui/material/Grid';
 import MuiSkeleton from '@mui/material/Skeleton';
 
+/**
+ * Skeleton preloader component made specifically to be rendered during
+ * initial character loading process.
+ *
+ * @component
+ */
 export const SkeletonLoader = ({ count = 20 }: { count?: number }) => {
     return (
         <Grid container spacing={4}>

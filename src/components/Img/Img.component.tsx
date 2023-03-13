@@ -2,20 +2,22 @@ import { useEffect, useState } from 'react';
 
 import { Skeleton } from '@mui/material';
 
-const loadImg = (src: string): Promise<string> =>
-    new Promise((resolve, reject) => {
-        const img = new Image();
-        img.src = src;
-        img.onload = () => resolve(src);
-        img.onerror = () => reject(new Error('could not load image'));
-    });
+import { loadImg } from './Img.utils';
 
+/**
+ * Lazy load image loading component.
+ * Renders a MUI skeleton when loading.
+ *
+ * @component
+ */
 export const Img = ({
     src,
     alt = 'custom image',
+    size = 248,
 }: {
     src: string;
     alt?: string;
+    size?: number;
 }) => {
     const [source, setSource] = useState('');
     useEffect(() => {
@@ -30,6 +32,6 @@ export const Img = ({
     return source ? (
         <img src={source} alt={alt} />
     ) : (
-        <Skeleton variant="rectangular" height={248} width={248} />
+        <Skeleton variant="rectangular" height={size} width={size} />
     );
 };

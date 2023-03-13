@@ -5,6 +5,11 @@ import { NAV_TABS } from './NavBar.types';
 import { NAV_BAR_PATH_MAP } from './navBar.utils';
 import { getCurrentPageFromLocalStorage } from 'utils/localStorage.utils';
 
+/**
+ * A custom NavBar hook to handle data separately from view.
+ *
+ * @return {Object} { handleChange, selectedTab }
+ */
 export const useNavBar = (): {
     handleChange: (e: SyntheticEvent, value: number) => void;
     selectedTab: NAV_TABS;

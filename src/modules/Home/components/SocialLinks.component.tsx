@@ -7,6 +7,11 @@ import SocialCard from './SocialCard.component';
 import { ISocialLink } from 'modules/Home/Home.types';
 import { getSocialLinks } from 'modules/Home/home.utils';
 
+/**
+ * Social link cards renderer.
+ *
+ * @component
+ */
 const SocialLinks = () => {
     const [socialLinks, setSocialLinks] = useState<ISocialLink[]>([]);
 

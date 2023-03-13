@@ -10,6 +10,11 @@ import {
 
 import { ISocialLink } from '../Home.types';
 
+/**
+ * Social link card component made for easy access to the links.
+ *
+ * @component
+ */
 const SocialCard = ({ link, label, description }: ISocialLink) => {
     return (
         <Card>

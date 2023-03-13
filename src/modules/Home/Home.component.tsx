@@ -8,6 +8,12 @@ import { homePageStyles } from './Home.styles';
 
 import gif from 'assets/home_page.gif';
 
+/**
+ * Home page with author's social links and a brief project description.
+ * Also contains an awesome gif :)
+ *
+ * @component
+ */
 export const Home = () => {
     return (
         <ContentWrapper>

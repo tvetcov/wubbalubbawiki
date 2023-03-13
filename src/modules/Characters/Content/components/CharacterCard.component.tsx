@@ -5,6 +5,12 @@ import Img from 'components/Img';
 import { ICharacter } from 'services/api.types';
 import { characterCardStyles } from './CharacterCard.styles';
 
+/**
+ * Basic character card component to render it's image and name.
+ * Clicking on it will console.log() the entire character object.
+ *
+ * @component
+ */
 const CharacterCard = ({ character }: { character: ICharacter }) => {
     const { name, image } = character;
 

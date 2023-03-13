@@ -1,5 +1,10 @@
 import { ISocialLink } from './Home.types';
 
+/**
+ * Author's social account links getter.
+ *
+ * @return {array} - array of social links
+ * */
 export const getSocialLinks = (): Array<ISocialLink> => {
     return [
         {

@@ -9,6 +9,13 @@ import { ICharacter } from 'services/api.types';
 import { getCurrentPageFromLocalStorage } from 'utils/localStorage.utils';
 import { useParams } from 'react-router-dom';
 
+/**
+ * A custom Characters data handling hook.
+ * Basically gets data from server, dispatches pagination init action and
+ * sets error state.
+ *
+ * @return {Object} { isLoading, error, characters }
+ */
 export const useCharacterData = (): {
     isLoading: boolean;
     characters: ICharacter[];

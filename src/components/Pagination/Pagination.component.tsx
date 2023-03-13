@@ -6,6 +6,11 @@ import MuiPagination from '@mui/material/Pagination';
 import { setCurrentPageToLocalStorage } from 'utils/localStorage.utils';
 import { ROUTE_LIST } from 'router/config';
 
+/**
+ * Extended MUI pagination component.
+ *
+ * @component
+ */
 export const Pagination = ({
     totalPages,
     currentPage,

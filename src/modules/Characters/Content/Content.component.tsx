@@ -13,6 +13,12 @@ import { changePage } from 'redux/slices/characters.slice';
 import { ICharacter } from 'services/api.types';
 import CharacterCard from './components/CharacterCard.component';
 
+/**
+ * Character main content component to handle both pagination and
+ * character cards rendering
+ *
+ * @component
+ */
 export const Content = ({ characters }: { characters: Array<ICharacter> }) => {
     const dispatch = useDispatch();
 
