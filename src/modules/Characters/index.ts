@@ -1,3 +1,3 @@
-import { Characters } from './Characters.comonent';
+import { Characters } from './Characters.component';
 
 export default Characters;

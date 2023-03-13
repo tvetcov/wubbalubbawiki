@@ -13,14 +13,18 @@ export const counterSlice = createSlice({
             state: IState,
             action: PayloadAction<IMetaInfo & { currentPage: string }>
         ) => {
-            state.prevPage = action.payload.prev;
-            state.nextPage = action.payload.next;
-            state.totalPages = action.payload.count;
+            state.totalPages = action.payload.pages;
             state.currentPage = action.payload.currentPage;
+        },
+        changePage: (
+            state: IState,
+            action: PayloadAction<{ page: string }>
+        ) => {
+            state.currentPage = action.payload.page;
         },
     },
 });
 
-export const { initPagination } = counterSlice.actions;
+export const { initPagination, changePage } = counterSlice.actions;
 
 export default counterSlice.reducer;

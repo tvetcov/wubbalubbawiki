@@ -1,28 +1,34 @@
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
+import { FetchBaseQueryError } from '@reduxjs/toolkit/query';
+import { SerializedError } from '@reduxjs/toolkit';
 
 import { useGetCharactersByPageQuery } from 'services/characters.service';
 import { initPagination } from 'redux/slices/characters.slice';
 import { ICharacter } from 'services/api.types';
+import { getCurrentPageFromLocalStorage } from 'utils/localStorage.utils';
+import { useParams } from 'react-router-dom';
 
-export const useCharacterData = (
-    page: string
-): {
+export const useCharacterData = (): {
     isLoading: boolean;
     characters: ICharacter[];
+    error?: FetchBaseQueryError | SerializedError;
 } => {
     const dispatch = useDispatch();
+    const params = useParams();
+    const page = params.page || getCurrentPageFromLocalStorage();
 
-    const { data, isLoading } = useGetCharactersByPageQuery(page);
+    const { data, isLoading, error } = useGetCharactersByPageQuery(page);
 
     useEffect(() => {
-        if (data) {
+        if (data?.info) {
             dispatch(initPagination({ ...data.info, currentPage: page }));
         }
     }, [data]);
 
     return {
         isLoading,
+        error,
         characters: (data?.results as []) || [],
     };
 };

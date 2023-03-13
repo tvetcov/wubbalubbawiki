@@ -1,27 +1,11 @@
-import { SyntheticEvent, useCallback, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-
 import { Paper, Tab, Tabs } from '@mui/material';
 
 import { navBarStyles } from './NavBar.styles';
-import { a11yProps, NAV_BAR_PATH_MAP } from './navBar.utils';
+import { a11yProps } from './navBar.utils';
+import { useNavBar } from './useNavBar.hook';
 
 export const NavBar = () => {
-    const [selectedTab, setSelectedTab] = useState(0);
-    const navigate = useNavigate();
-
-    const handleChange = useCallback(
-        (_: SyntheticEvent, newValue: number) => {
-            const navigatePath =
-                newValue === 0
-                    ? NAV_BAR_PATH_MAP[newValue]
-                    : NAV_BAR_PATH_MAP[newValue].replace(':page', '1');
-
-            setSelectedTab(newValue);
-            navigate(navigatePath);
-        },
-        [selectedTab]
-    );
+    const { selectedTab, handleChange } = useNavBar();
 
     return (
         <Paper sx={navBarStyles} square>
