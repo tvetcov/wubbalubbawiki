@@ -27,7 +27,12 @@ const SocialCard = ({ link, label, description }: ISocialLink) => {
                 </Typography>
             </CardContent>
             <CardActions>
-                <Button size="small" href={link} target="_blank">
+                <Button
+                    size="small"
+                    variant="contained"
+                    href={link}
+                    target="_blank"
+                >
                     Connect
                 </Button>
             </CardActions>

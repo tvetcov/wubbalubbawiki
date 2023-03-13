@@ -16,7 +16,7 @@ export const Pagination = ({
     onPageChange: (value: number) => void;
 }) => {
     const navigate = useNavigate();
-    const [page, setPage] = useState(currentPage);
+    const [page, setPage] = useState(isNaN(currentPage) ? 1 : currentPage);
 
     const handleChange = (event: ChangeEvent<unknown>, value: number) => {
         setPage(value);

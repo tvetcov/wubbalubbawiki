@@ -12,7 +12,7 @@ import { useParams } from 'react-router-dom';
 export const useCharacterData = (): {
     isLoading: boolean;
     characters: ICharacter[];
-    error?: FetchBaseQueryError | SerializedError;
+    error?: FetchBaseQueryError | SerializedError | boolean;
 } => {
     const dispatch = useDispatch();
     const params = useParams();
@@ -28,7 +28,7 @@ export const useCharacterData = (): {
 
     return {
         isLoading,
-        error,
+        error: error || !Number.isInteger(+page),
         characters: (data?.results as []) || [],
     };
 };

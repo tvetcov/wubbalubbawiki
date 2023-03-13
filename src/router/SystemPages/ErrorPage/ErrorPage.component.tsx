@@ -1,6 +1,6 @@
 import { useRouteError } from 'react-router-dom';
 
-import { Box, Button, Typography } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 
 import { IRouteError } from './ErroPage.types';
 import { errorPageStyles } from './ErrorPage.styles';
@@ -21,9 +21,6 @@ export const ErrorPage = () => {
                 <i>{error?.statusText || error?.message}</i>
             </p>
             <Img src={notFoundPicSrc} />
-            <Button color="primary" variant="contained">
-                Go home
-            </Button>
         </Box>
     );
 };
