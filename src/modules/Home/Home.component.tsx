@@ -17,8 +17,8 @@ import gif from 'assets/home_page.gif';
 export const Home = () => {
     return (
         <ContentWrapper>
-            <Grid sx={homePageStyles.root} container>
-                <Grid item xs={12}>
+            <Grid sx={homePageStyles.root} container flexDirection="column">
+                <Grid item>
                     <Tooltip
                         title="Wubba Lubba Dub-Dub is Rick's catchphrase"
                         arrow
@@ -49,7 +49,6 @@ export const Home = () => {
                     container
                     spacing={3}
                     item
-                    xs={12}
                     sx={homePageStyles.socialLinks}
                 >
                     <Grid item xs={12}>
