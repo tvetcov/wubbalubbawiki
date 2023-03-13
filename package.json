@@ -2,6 +2,7 @@
     "name": "wubbalubbawiki",
     "version": "0.1.0",
     "private": true,
+    "homepage": "https://tvetcov.github.io/wubbalubbawiki/",
     "scripts": {
         "start": "react-scripts start",
         "build": "BUILD_PATH='./docs'  react-scripts build",
