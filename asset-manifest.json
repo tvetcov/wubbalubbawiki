@@ -1,15 +1,13 @@
 {
   "files": {
-    "main.css": "/wubbalubbawiki/static/css/main.365e5c06.css",
-    "main.js": "/wubbalubbawiki/static/js/main.8debdc80.js",
+    "main.css": "/wubbalubbawiki/static/css/main.211a5cc4.css",
+    "main.js": "/wubbalubbawiki/static/js/main.d8e7b483.js",
     "static/media/home_page.gif": "/wubbalubbawiki/static/media/home_page.e85598a6f0e79a9fb41f.gif",
     "static/media/404.png": "/wubbalubbawiki/static/media/404.87df0a14fcefe533f9d5.png",
-    "index.html": "/wubbalubbawiki/index.html",
-    "main.365e5c06.css.map": "/wubbalubbawiki/static/css/main.365e5c06.css.map",
-    "main.8debdc80.js.map": "/wubbalubbawiki/static/js/main.8debdc80.js.map"
+    "index.html": "/wubbalubbawiki/index.html"
   },
   "entrypoints": [
-    "static/css/main.365e5c06.css",
-    "static/js/main.8debdc80.js"
+    "static/css/main.211a5cc4.css",
+    "static/js/main.d8e7b483.js"
   ]
 }
